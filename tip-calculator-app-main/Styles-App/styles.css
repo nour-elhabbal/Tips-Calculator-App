@@ -1,0 +1,254 @@
+/* adjust widths at 1150px device width */
+:root {
+  --strong-cyan: hsl(172, 67%, 45%);
+  --very-dark-cyan: hsl(183, 100%, 15%);
+  --grayish-cyan: hsl(184, 14%, 56%);
+  --light-grayish-cyan: hsl(185, 41%, 84%);
+  --very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --white: hsl(0, 0%, 100%);
+  --red: red;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+
+  transition: 0.5s ease-in-out;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body {
+  background-color: var(--light-grayish-cyan);
+}
+
+.appWrapper {
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 8%;
+}
+
+.logo {
+  width: 75px;
+  margin-bottom: 65px;
+}
+
+.main {
+  width: 55%;
+  min-width: 850px;
+  max-width: 1500px;
+  height: 400px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  background-color: var(--white);
+
+  border-radius: 1rem;
+
+  padding: 40px;
+}
+
+.calcInputs {
+  width: 47%;
+}
+
+.billAmountWrapper {
+  margin: 5px;
+}
+
+.label {
+  font-size: 16px;
+  color: var(--grayish-cyan);
+
+  margin-bottom: 7px;
+}
+
+.billAmount,
+.amountOfPeople {
+  width: 100%;
+
+  padding: 7px 7px;
+
+  border: 0px solid black;
+  border-radius: 0.3rem;
+
+  background-color: var(--very-light-grayish-cyan);
+
+  font-size: 18px;
+  text-align: right;
+  color: var(--very-dark-cyan);
+}
+
+.billAmount {
+  background-image: url("./images/icon-dollar.svg");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+
+  margin-bottom: 35px;
+}
+
+.amountOfPeople {
+  background-image: url("./images/icon-person.svg");
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+}
+
+.tipsAmountWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+
+  margin-bottom: 35px;
+}
+
+.tipPercentage {
+  display: block;
+
+  margin: 3px;
+
+  width: calc((100% / 3) - 12px);
+  height: 40px;
+
+  border-radius: 5px;
+  border: none;
+
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.tipsAmountWrapper button {
+  color: var(--very-light-grayish-cyan);
+  background-color: var(--very-dark-cyan);
+}
+
+.customTipPercentage {
+  color: var(--very-dark-cyan);
+  text-align: center;
+}
+
+.peopleAmountWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.error {
+  color: red;
+  font-size: 13px;
+  display: none;
+}
+
+.calculationResults {
+  display: flex;
+  flex-direction: column;
+
+  width: 49%;
+  padding: 40px 20px;
+  border-radius: 0.5rem;
+
+  background-color: var(--very-dark-cyan);
+}
+
+.tipsPerPerson {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 40px;
+}
+
+.amountOrTotal {
+  color: var(--very-light-grayish-cyan);
+  margin-bottom: 5px;
+}
+
+.perPerson {
+  color: var(--grayish-cyan);
+}
+
+.result {
+  color: var(--strong-cyan);
+  font-size: 35px;
+}
+
+.resetBTN {
+  width: 90%;
+
+  align-self: center;
+
+  margin-top: 40px;
+  padding: 16px 32px;
+
+  background-color: hsl(185, 100%, 20%);
+
+  text-decoration: none;
+  cursor: not-allowed;
+
+  border-radius: 0.5rem;
+  border: none;
+
+  font-size: 17px;
+  color: hsl(185, 88%, 13%);
+}
+
+@media screen and (max-width: 910px) {
+  .appWrapper {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .main {
+    flex-direction: column;
+    min-width: 300px;
+    height: max-content;
+    padding: 30px 25px;
+  }
+
+  .calcInputs {
+    width: 100%;
+  }
+
+  .tipPercentage {
+    width: calc((100% / 2) - 10px);
+  }
+
+  .calculationResults {
+    width: 100%;
+    padding: 30px 20px;
+    margin-top: 30px;
+  }
+
+  .tipsPerPerson {
+    flex-direction: column;
+  }
+
+  .amountOrTotal {
+    text-align: center;
+  }
+
+  .perPerson {
+    text-align: center;
+  }
+
+  .information {
+    margin-bottom: 10px;
+  }
+
+  .resetBTN {
+    margin-top: 10px;
+  }
+}

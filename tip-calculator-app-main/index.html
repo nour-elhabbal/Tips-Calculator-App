@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- displays site properly based on user's device -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- google fonts -->
+    <!-- <link
+      rel="stylesheet"
+      href="https://fonts.google.com/specimen/Space+Mono"
+    /> -->
+
+    <!-- page logo -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <!-- page title -->
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./Styles-App/styles.css" />
+  </head>
+  <body>
+    <div class="appWrapper">
+      <img
+        src="./Styles-App/images/logo.svg"
+        alt="logo(splitter)"
+        class="logo"
+      />
+
+      <div class="main">
+        <!--  -->
+        <div class="calcInputs">
+          <div class="billAmountWrapper">
+            <p class="label">Bill</p>
+            <input type="number" class="billAmount" placeholder="0" />
+          </div>
+          <p class="label">Select tip %</p>
+
+          <div class="tipsAmountWrapper">
+            <button class="tipPercentage percentage-5">5 %</button>
+            <button class="tipPercentage percentage-10">10 %</button>
+            <button class="tipPercentage percentage-15">15 %</button>
+            <button class="tipPercentage percentage-25">25 %</button>
+            <button class="tipPercentage percentage-50">50 %</button>
+            <input
+              type="number"
+              class="tipPercentage customTipPercentage"
+              placeholder="Custom"
+            />
+          </div>
+          <div class="peopleAmountWrapper">
+            <p class="label">Number of people</p>
+            <p class="error">Can't be zero</p>
+          </div>
+          <input
+            type="number"
+            class="amountOfPeople"
+            placeholder="0"
+            value="1"
+          />
+        </div>
+        <!--  -->
+        <div class="calculationResults">
+          <div class="tipsPerPerson">
+            <div class="information">
+              <h3 class="amountOrTotal">Tip Amount</h3>
+              <p class="perPerson">/ Person</p>
+            </div>
+            <h2 class="result result1">$ 0.00</h2>
+          </div>
+
+          <div class="tipsPerPerson">
+            <div class="information">
+              <h3 class="amountOrTotal">Total</h3>
+              <p class="perPerson">/ Person</p>
+            </div>
+            <h2 class="result result2">$ 0.00</h2>
+          </div>
+          <button class="resetBTN">Reset</button>
+        </div>
+      </div>
+    </div>
+    <script src="./Styles-App/app.js"></script>
+  </body>
+</html>
