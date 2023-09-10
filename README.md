@@ -22,8 +22,8 @@ Users should be able to:
 
 ### Links
 
-- [Solution URL]()
-- [Live Site URL]()
+- [Solution URL](https://github.com/nour-elhabbal/Tips-Calculator-App)
+- [Live Site URL](https://tips-calculator-app-nu.vercel.app/)
 
 ## My process
 
