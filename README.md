@@ -1,6 +1,6 @@
 # Frontend Mentor - Tip calculator app solution
 
-![Design preview for the Interactive pricing component coding challenge](./tip-calculator-app-main/Styles-Script/design/desktop-preview.jpg)
+![Design preview for the tips calculator app component coding challenge](./tip-calculator-app-main/Styles-Script/design/desktop-preview.jpg)
 
 This is a solution to the [Tip calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/tip-calculator-app-ugJNGbJUX). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
